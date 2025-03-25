@@ -1,0 +1,128 @@
+/* إعدادات أساسية */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1, h4 {
+    color: #333;
+}
+
+/* تنسيق شريط التنقل */
+.navbar {
+    background-color: #007bff;
+    padding: 1rem;
+    
+}
+.container_nav{
+  background-color: transparent;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+}
+
+/* تنسيق الأسئلة */
+.question {
+    background-color: #f0f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.question h4 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+}
+input[type='radio']{
+    margin-left: 10px;
+}
+.option-card {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.option-card:hover {
+    transform: scale(1.05);
+}
+
+.option-card input {
+    margin-right: 10px;
+}
+.container_nav{
+background-color: transparent;
+}
+
+/* زر إرسال التصويت */
+.btn-success {
+    font-size: 1.2rem;
+    padding: 10px;
+    background-color: #28a745;
+    border-color: #28a745;
+    transition: 0.3s;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+/* زر إضافة صنف جديد */
+.add-option-btn {
+    margin-top: 10px;
+}
+
+/* تنسيق للموبايل */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .question h4 {
+        font-size: 1.2rem;
+    }
+
+    .navbar .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+
+    .btn-success {
+        font-size: 1rem;
+    }
+}
